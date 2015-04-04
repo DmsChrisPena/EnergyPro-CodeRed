@@ -1,8 +1,7 @@
 {
 	"name": "energypro",
-	"description": "Natural Gas Account Software",
+	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
 	"version": "0.0.1",
-	"author": "Cougrammers",
 	"engines": {
 		"node": "0.10.x",
 		"npm": "1.4.x"

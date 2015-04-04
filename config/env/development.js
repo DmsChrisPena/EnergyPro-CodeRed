@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://chris:1q0p2w9o@c153.horace.1.mongolayer.com:10153,c153.horace.0.mongolayer.com:10153/energypro?replicaSet=set-551f496bf037a5c1bc000747',
+	db: 'mongodb://chris:1q0p2w9o@c153.horace.1.mongolayer.com:10153,c153.horace.0.mongolayer.com:10153/energypro-new?replicaSet=set-551f496bf037a5c1bc000747',
 	app: {
 		title: 'EnergyPro - Development Environment'
 	},

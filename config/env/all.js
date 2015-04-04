@@ -3,8 +3,8 @@
 module.exports = {
 	app: {
 		title: 'EnergyPro',
-		description: 'Natural Gas Account Software',
-		keywords: 'Saas'
+		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
+		keywords: 'MongoDB, Express, AngularJS, Node.js'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
