@@ -12,6 +12,41 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label" for="contract_number">ID</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract_number" id="contract_number" class="form-control" placeholder="ID" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="con_type">Type</label>
+                    <div class="controls">
+                        <select data-ng-model="con_type" id="con_type" class="form-control" placeholder="Purchase" required>
+                            <option>Purchase</option>
+                            <option>Sale</option>
+                            <option>General</option>
+                        </select>
+<!--                         <input type="text" data-ng-model="con_type" id="con_type" class="form-control" placeholder="Type" required> -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="transport_cost">Transport Cost</label>
+                    <div class="controls">
+                        <input type="number" data-ng-model="transport_cost" id="transport_cost" class="form-control" placeholder="Cost" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="days_effective">Days Effective</label>
+                    <div class="controls">
+                        <input type="number" data-ng-model="days_effective" id="days_effective" class="form-control" placeholder="Days Effective" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="expected_profit">Expected Profit</label>
+                    <div class="controls">
+                        <input type="number" data-ng-model="expected_profit" id="expected_profit" class="form-control" placeholder="Expected Profit" required>
+                    </div>
+                </div>
+                <div class="form-group">
                     <input type="submit" class="btn btn-default">
                 </div>
 				<div data-ng-show="error" class="text-danger">

@@ -9,7 +9,8 @@ angular.module('pipelines').controller('PipelinesController', ['$scope', '$state
 		$scope.create = function() {
 			// Create new Pipeline object
 			var pipeline = new Pipelines ({
-				name: this.name
+				name: this.name,
+				points: this.points
 			});
 
 			// Redirect after save
@@ -18,6 +19,7 @@ angular.module('pipelines').controller('PipelinesController', ['$scope', '$state
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.points = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

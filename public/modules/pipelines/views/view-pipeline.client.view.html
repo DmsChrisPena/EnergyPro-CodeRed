@@ -2,6 +2,9 @@
 	<div class="page-header">
 		<h1 data-ng-bind="pipeline.name"></h1>
 	</div>
+	<div class="page-content">
+		<p>{{pipeline.points}}</p>
+	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == pipeline.user._id))">
 		<a class="btn btn-primary" href="/#!/pipelines/{{pipeline._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>

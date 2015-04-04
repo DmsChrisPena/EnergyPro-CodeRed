@@ -20,6 +20,21 @@ var CompanySchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
+	city: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	state: {
+		type: String,
+		default: '',
+		trim: true
+	},
+	industry: {
+		type: String,
+		default: '',
+		trim: true
+	},
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'

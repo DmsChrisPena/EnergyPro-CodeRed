@@ -16,6 +16,11 @@ var PipelineSchema = new Schema({
 		required: 'Please fill Pipeline name',
 		trim: true
 	},
+	points: {
+		type: String,
+		default: '',
+		trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now

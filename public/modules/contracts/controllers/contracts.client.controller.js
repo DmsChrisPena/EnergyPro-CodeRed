@@ -9,7 +9,12 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 		$scope.create = function() {
 			// Create new Contract object
 			var contract = new Contracts ({
-				name: this.name
+				name: this.name,
+				contract_number: this.contract_number,
+				con_type: this.con_type,
+				transport_cost: this.transport_cost,
+				days_effective: this.days_effective,
+				expected_profit: this.expected_profit
 			});
 
 			// Redirect after save
@@ -18,6 +23,11 @@ angular.module('contracts').controller('ContractsController', ['$scope', '$state
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.contract_number = '';
+				$scope.con_type = 'Purchase';
+				$scope.transport_cost = '';
+				$scope.days_effective = '';
+				$scope.expected_profit = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

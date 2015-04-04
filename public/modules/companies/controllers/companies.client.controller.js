@@ -9,7 +9,10 @@ angular.module('companies').controller('CompaniesController', ['$scope', '$state
 		$scope.create = function() {
 			// Create new Company object
 			var company = new Companies ({
-				name: this.name
+				name: this.name,
+				city: this.city,
+				state: this.state,
+				industry: this.industry
 			});
 
 			// Redirect after save
@@ -18,6 +21,9 @@ angular.module('companies').controller('CompaniesController', ['$scope', '$state
 
 				// Clear form fields
 				$scope.name = '';
+				$scope.city = '';
+				$scope.state = '';
+				$scope.industry = '';
 			}, function(errorResponse) {
 				$scope.error = errorResponse.data.message;
 			});

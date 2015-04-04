@@ -12,6 +12,24 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label" for="name">ID</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.contract_number" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Type</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.con_type" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Transport Cost</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="contract.transport_cost" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
                     <input type="submit" value="Update" class="btn btn-default">
                 </div>
 				<div data-ng-show="error" class="text-danger">

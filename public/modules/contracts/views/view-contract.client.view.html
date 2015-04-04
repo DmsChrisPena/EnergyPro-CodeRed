@@ -2,6 +2,29 @@
 	<div class="page-header">
 		<h1 data-ng-bind="contract.name"></h1>
 	</div>
+	<div class="page-content">
+		<table class="table table-hover">
+			<tr>
+				<th>Name</th>
+				<th>Contract Number</th>
+				<th>Type</th>
+				<th>Transport Cost</th>
+				<th>Days Effective</th>
+				<th>Expected Profit</th>
+				<th>Total Cost</th>
+			</tr>
+			<tr class="info">
+				<td>{{contract.name}}</td>
+				<td>{{contract.contract_number}}</td>
+				<td>{{contract.con_type}}</td>
+				<td>{{contract.transport_cost}}</td>
+				<td>{{contract.days_effective}}</td>
+				<td>{{contract.expected_profit}}</td>
+				<td>{{5 * 1000 - contract.transport_cost * 1000}}</td>
+
+			</tr>
+		</table>
+	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == contract.user._id))">
 		<a class="btn btn-primary" href="/#!/contracts/{{contract._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
